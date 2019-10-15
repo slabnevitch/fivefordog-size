@@ -1,0 +1,175 @@
+*{
+	box-sizing: border-box;
+}
+html, body{
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+html{
+	font-size: 20px;
+}
+body{
+	font-family: $din-r;
+	font-weight: normal;
+	font-size: 20px;
+	min-width: 320px;
+	position: relative;
+	-webkit-font-smoothing: antialiased;
+	overflow-x: hidden;
+	color: $text;
+}
+.ffd-standart-container{
+	max-width: 1500px;
+	margin: 0 auto;
+	padding-left: 53px;
+}
+.ffd-paragrafh{
+	margin: 0;
+	line-height: 26px;
+}
+.button{
+  display: inline-block;
+  min-width: 260px;
+  border: none;
+  color: $text;
+  text-decoration: none;
+  background-color: #fff;
+  padding: 30px 0 28px 42px;
+  font-size: 21px;
+  text-transform: uppercase;
+  // font-weight: 600;
+  // letter-spacing: 3px;
+  // border-radius: 2px;
+  // text-align: center;
+  outline: none;
+  transition: background-color .1s ease;
+  @extend .animated;
+  
+  &:hover{
+     // background-color: lighten(orange, 5%);
+   @extend .heartBeat;
+
+  }
+   
+    
+  &:active{
+   // background-color: darken(orange, 5%);
+  }
+   
+}
+
+.ffd-magenta-link{
+	font-size: 21px;
+	text-transform: uppercase;
+	text-decoration: underline;
+	color: $magenta;
+}
+input{
+	outline: none;
+}
+h1, h2, h3, h4{
+	margin: 0;
+	font-family: $din-b;
+	font-weight: normal;
+	text-transform: uppercase;
+}
+h1{
+	margin-top: rem(92);
+	margin-bottom: rem(84);
+	font-size: rem(163);
+	line-height: rem(209);
+}
+h2{
+	font-size: rem(103);
+	line-height: rem(132);
+}
+h3{
+	font-size: rem(35);
+	line-height: rem(44);
+}
+ul, li{
+	margin: 0;
+	padding: 0;
+}
+
+.toggle-mnu{
+  position: relative;
+  display: none;
+  width: 28px;
+  height: 28px;
+  margin-top: 14px;
+  z-index: 100;
+
+  span:after, span:before{
+
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 9px;
+  } 
+
+  span:after{
+
+    top: 18px;
+  }
+
+  span{
+
+    position: relative;
+    display: block;
+  } 
+
+  span, span:after, span:before{
+
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    transition: all 0.3s;
+    backface-visibility: hidden;
+    border-radius: 2px;
+  }
+
+
+  &.on span{
+
+    background-color: transparent;
+  } 
+
+  &.on span:before{
+
+    transform: rotate(45deg) translate(-1px, 0px);
+  } 
+
+  &.on span:after{
+
+    transform: rotate(-45deg) translate(6px, -7px);
+  } 
+} 
+
+
+.justify{
+	content: '';
+	width: 100%;
+	height: 0;
+	display: inline-block;
+	overflow: hidden;
+	visibility: hidden;
+	line-height: 0;
+}
+.hidden{
+	display: none;
+}
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    left: 20%;
+  }
+  100% {
+    opacity: 1;
+    left: 0;
+  }
+}
+.red{
+  background-color: red;
+}

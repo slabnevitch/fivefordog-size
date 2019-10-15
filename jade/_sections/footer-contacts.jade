@@ -1,0 +1,34 @@
+footer.footer.footer-contacts
+	.footer-container
+		a(href="#").toggle-mnu
+			span
+				
+		ul.footer-menu
+			- var fmenu = ['home', 'about', 'portfolio', 'contact us'];
+			each item, ind in fmenu
+				if ind == 1
+					li.active
+						a(href="#")= item
+				else
+					li
+						a(href="#")= item
+
+		ul.footer-socials
+			li
+				a(href="#")
+					i.fab.fa-instagram
+			li
+				a(href="#")
+					i.fab.fa-behance
+			li
+				a(href="#")
+					i.fab.fa-dribbble
+			li
+				a(href="#")
+					.fab.fa-twitter
+			li
+				a(href="#")
+					i.fab.fa-facebook-f
+			li
+				a(href="#")
+					i.fab.fa-github-alt

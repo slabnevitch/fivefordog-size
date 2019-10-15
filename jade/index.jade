@@ -1,0 +1,24 @@
+extends _misc/main
+
+block title
+	| Главная страница
+
+block header-search-icon
+	include _misc/search-standart
+block content
+	section.main-page
+		.main-page__left
+			.main-page__inner
+				.main-page__visual
+			img(src="img/main-page/main-page_visual.svg", alt="alt").main-page__pict.animated.pulse.infinite.delay-2s
+		//- .main-page__container
+		//- 	.main-page__left-content
+		.main-page__right
+			h2 FIVE FOR DOG
+			p.ffd-paragrafh
+				| Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Esse cillum dolore eu fugiat nulla pariatur.
+
+			a.button(href="#") GET A QUOTE
+
+block footer
+	include _sections/footer-index

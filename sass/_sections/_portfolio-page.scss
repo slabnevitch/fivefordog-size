@@ -1,0 +1,163 @@
+/*--------portfolio-page-------*/
+.portfolio-item{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	height: 100%;
+
+	&__left{
+		width: 48.90625%;
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+	}
+
+	&__right{
+		width: 64.21875%;
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+}
+.portfolio-item__logo{
+	max-width: 621px;
+	max-height: 400px;
+	text-align: center;
+	img{
+		max-width: 100%;
+	}
+}
+.portfolio-item__content{
+	max-width: 443px;
+	max-height: 80%;
+	overflow-style: auto;
+	margin-right: rem(218);
+
+	&--wht{
+		color: #fff;
+	}
+}
+.portfolio-item__title{
+	margin-bottom: rem(40);
+	font-size: 30px;
+	font-family: $din-b;
+}
+.portfolio-item__description{
+	margin-bottom: 18px;
+	font-family: $din-m;
+	line-height: 26px;
+}
+.portfolio-item__tags{
+	margin-bottom: rem(57);
+	a{
+		display: inline-block;
+		position: relative;
+		color: rgba($text, .75);
+		text-decoration: none;
+		font-family: $din-ri;
+		font-size: 14px;
+		line-height: 18px;
+
+		&:after{
+			content: '/';
+			vertical-align: middle;
+		}
+
+
+		&:last-child{
+			&:after{
+				display: none;
+			}
+		}
+
+	}
+}
+.range-wrapper{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	align-items: center;
+	margin-right: rem(90);
+}
+.range-container{
+	position: relative;
+	margin-right: 42px;
+}
+.range-arrow{
+	position: absolute;
+	width: 15px;
+	height: 25px;
+	top: 50%;
+	transform: translateY(-50%);
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	cursor: pointer;
+	z-index: 2;
+
+	&:first-of-type{
+		left: -20px;
+		background-image: url(../img/icons-svg/chevron-left-solid.svg);
+	}
+	&:last-of-type{
+		right: -20px;
+		background-image: url(../img/icons-svg/chevron-right-solid.svg);
+	}
+	&:nth-child(){
+		
+	}
+}
+.range{
+	width: 590px;
+	position: relative;
+	z-index: 1;
+	
+}
+.range-counter{
+	flex-shrink: 0;
+	span{
+		font-size: 18px;
+		font-family: $din-m;
+	}
+}
+.noUi-horizontal{
+	height: 5px;
+	border: none;
+}
+.noUi-target{
+	box-shadow: none;
+	border-radius: 3px;
+	background-color: rgba($text, .25);
+}
+.noUi-horizontal .noUi-handle{
+	width: 32px;
+	height: 5px;
+	top: 0;
+	left: 0;
+	background-color: $text;
+
+	&:hover, &:active, &:focus{
+		outline: none;
+	}
+	
+}
+.noUi-handle{
+	box-shadow: none;
+	border: none;
+}
+.noUi-handle:after, .noUi-handle:before{
+	background-color: transparent;
+}
+/*--------end portfolio-page-------*/

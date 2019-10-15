@@ -1,0 +1,87 @@
+extends _misc/main
+
+block title
+	| Contacts
+
+block header-logo
+	img(src="img/contacts-page/contacts-logo.svg", alt="alt")
+
+block header-search-icon
+	img(src="img/icons-svg/magnifier-wht.svg", alt="alt")
+
+block content
+	section.contacts
+		.contacts-container
+			.contacts-container__inner
+				.contacts-left
+					form(action="#").ffd-form
+						.ffd-form__row
+							label.ffd-form__label
+								span.ffd-form__label-mame NAME
+								input(type="text", name="" placeholder="HAROLD")
+
+						.ffd-form__row
+							label.ffd-form__label
+								span.ffd-form__label-mame COMPANY NAME
+								input(type="text", name="" placeholder="HAROLD INC.")
+
+							label.ffd-form__label.ffd-form__label--big
+								span.ffd-form__label-mame PHONE NUMBER OR EMAIL
+								input(type="text", name="" placeholder="IAMHAROLD@MAIL.COM")
+
+						.ffd-form__row.ffd-form__row--selects
+							.ffd-form__select PROJECT TYPE
+								.ffd-form__select-label
+								select#(name="")
+									- for (var i=0; i < 5; i++)
+											option(value="") SELECT THAT APPLY
+
+							.ffd-form__select
+								.ffd-form__select-label BUDGET
+								select#(name="")
+									- for (var i=0; i < 5; i++)
+											option(value="") INVEST IN PROJECT
+						
+						label.ffd-form__label.ffd-form__label--textarea
+							span.ffd-form__label-mame QUICK MESSAGE
+							textarea(name="")
+
+						.ffd-form__buttons
+							a(href="#").button CALL ME
+							button(type="submit") SEND
+
+				.contacts-right
+					.contacts-info
+						.contacts-info__block UKRAINE 
+							br 
+							| KHARKIV 
+							br 
+							| Svobody Square, 7
+							.contacts-info__icon
+								i.fas.fa-map-marker
+
+						.contacts-info__block
+							a(href="mailto:HI!@FIVE4DOG.COM") HI!@FIVE4DOG.COM
+							.contacts-info__icon
+								i.fas.fa-envelope-open-text
+
+						.contacts-info__block
+							a(href="tel:+380676678030") +38 067 667 80 30
+							.contacts-info__icon
+								i.fas.fa-phone
+
+						.contacts-info__note cooperation/ 
+							br
+							| career openings:
+
+						.contacts-info__block
+							a(href="mailto:WOOF@FIVE4DOG.COM") WOOF@FIVE4DOG.COM
+							.contacts-info__icon
+								i.fas.fa-briefcase
+
+
+block footer
+	include _sections/footer-contacts
+
+block page-scripts
+	script(src="js/libs/jquery-ui/jquery-ui.min.js")

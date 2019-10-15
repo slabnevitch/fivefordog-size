@@ -1,0 +1,54 @@
+.search-screen
+	header.header
+		.header-container
+			a(href="#").header-logo
+				img(src="img/search-logo.svg", alt="alt")
+
+
+			.header-right
+
+				
+
+				.header-search
+					img(src="img/icons-svg/close.svg", alt="alt")
+	
+	.search-screen__container
+		.search-screen__nav
+			.search-screen__nav-title QUICK 
+				br
+				| NAVIGATION
+
+			- var navs = ['logo', 'branding', 'uix', 'landing', 'website', 'app', 'print', 'illustration', 'motion', 'motion'];
+			ul
+				each nav in navs
+					li
+						a(href="#")= nav
+							i.fas.fa-arrow-right
+
+		.search-screen__field
+			form(action="#")
+				input(type="text" placeholder="YOUR SEARCH REQUEST HERE")
+
+	footer.footer.footer-on-search
+		.footer-container
+			
+
+			ul.footer-socials
+				li
+					a(href="#")
+						i.fab.fa-instagram
+				li
+					a(href="#")
+						i.fab.fa-behance
+				li
+					a(href="#")
+						i.fab.fa-dribbble
+				li
+					a(href="#")
+						.fab.fa-twitter
+				li
+					a(href="#")
+						i.fab.fa-facebook-f
+				li
+					a(href="#")
+						i.fab.fa-github-alt
