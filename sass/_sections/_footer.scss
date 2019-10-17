@@ -28,7 +28,7 @@
 
 							&:before{
 								transform: scaleX(1);
-								height: 100%;
+								width: 100%;
 								background: #fff;
 							}
 
@@ -135,17 +135,18 @@
 				content: "";
 				background: #000;
 				position: absolute;
-				width: 100%;
-				height: 5px;
+				width: 5px;
+				height: 100%;
 				bottom: 0;
 				left: 0;
 				border-radius: 2px;
 				transform: scaleX(0);
-				-webkit-transform: scale(0);
+				// -webkit-transform: scale(0);
 				animation: 1s forwards no-hover-v linear;
-				-webkit-animation: 1s forwards no-hover-v linear;
-				animation-fill-mode: forwards;
-				-webkit-animation-fill-mode: forwards;
+				// -webkit-animation: 1s forwards no-hover-v linear;
+				// animation-fill-mode: forwards;
+				// -webkit-animation-fill-mode: forwards;
+				transform-origin: left center;
 				z-index: -1;
 			}
 
@@ -183,7 +184,8 @@
 				color: #fff;
 				&:before{
 					transform: scaleX(1);
-					height: 100%;
+					width: 100%;
+					opacity: .7;
 				}
 				&:hover:before,
 				&:focus:before{
@@ -192,6 +194,24 @@
 			}
 		}
 	}
+}
+@keyframes hover-v {
+  0% {
+      transform: scaleX(0);
+      -webkit-transform: scale(0);
+      width: 5px;
+     }
+  45% {   
+      transform: scaleX(1);
+      -webkit-transform: scale(1);
+      width: 5px;
+     }
+  55% {width: 5px;}
+  100% {
+      transform: scaleX(1);
+      -webkit-transform: scale(1);
+      width: 100%;
+     }
 }
 .footer-socials{
 	li{
@@ -212,22 +232,4 @@
 
 
 	}
-}
-@keyframes hover-v {
-  0% {
-      transform: scaleX(0);
-      -webkit-transform: scale(0);
-      height: 5px;
-     }
-  45% {   
-      transform: scaleX(1);
-      -webkit-transform: scale(1);
-      height: 5px;
-     }
-  55% {height: 5px;}
-  100% {
-      transform: scaleX(1);
-      -webkit-transform: scale(1);
-      height: 100%;
-     }
 }
