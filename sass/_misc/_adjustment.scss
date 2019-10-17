@@ -43,13 +43,10 @@ body{
   // border-radius: 2px;
   // text-align: center;
   outline: none;
-  transition: background-color .1s ease;
-  @extend .animated;
+  transition: all .1s ease-in;
   
   &:hover{
-     // background-color: lighten(orange, 5%);
-   @extend .heartBeat;
-
+     opacity: .7;
   }
    
     

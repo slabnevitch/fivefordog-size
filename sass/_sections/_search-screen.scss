@@ -47,24 +47,35 @@
 					position: relative;
 					transition: all .2s ease;
 
-					i{
+					&:before{
+						content: '';
+						width: 16px;
+						height: 3px;
+						background-color: #fff;
+						border-radius: 2px;
 						position: absolute;
+						top: 10px;
 						left: -20px;
 						transition: all .2s ease;
+					}
+
+
+					i{
+						position: absolute;
 
 					}
 
 					&:hover{
 						padding-left: 30px;
 						color: #fff;
-						i{
+						&:before{
 							transform: translateX(30px);
 						}
 					}
 					&:active{
 						padding-left: 0;
 						color: #000;
-						i{
+						&:before{
 							transform: translateX(0);
 						}
 					}

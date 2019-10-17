@@ -30,8 +30,8 @@ block content
 			section.portfolio-item
 				.portfolio-item__left(style="background-color: #F6AD4D")
 					.portfolio-item__content
-						.portfolio-item__title.animated.fadeOutDown LADDERMASTER
-						.portfolio-item__description.animated.fadeOutUp Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.
+						.portfolio-item__title LADDERMASTER
+						.portfolio-item__description Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.
 						
 						.portfolio-item__tags
 							- var tags = ['logo', 'branding', 'packaging', 'uix'];
@@ -42,14 +42,14 @@ block content
 
 				.portfolio-item__right(style="background-image: url(img/portfolio-page/laddermaster-bg/laddermaster.jpg)")
 
-					.portfolio-item__logo.animated.zoomOutRight
+					.portfolio-item__logo
 						img(src="img/portfolio-page/laddermaster-logo.svg", alt="alt")
 
 			section.portfolio-item
 				.portfolio-item__left(style="background-color: #6B50DD")
 					.portfolio-item__content.portfolio-item__content--wht
-						.portfolio-item__title.animated.fadeOutDown MAXITING
-						.portfolio-item__description.animated.fadeOutUp Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.
+						.portfolio-item__title MAXITING
+						.portfolio-item__description Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.
 						
 						.portfolio-item__tags
 							- var tags = ['logo', 'branding'];
@@ -60,7 +60,7 @@ block content
 
 				.portfolio-item__right(style="background-image: url(img/portfolio-page/laddermaster-bg/laddermaster.jpg)")
 
-					.portfolio-item__logo.animated.zoomOutRight
+					.portfolio-item__logo
 						img(src="img/portfolio-page/maxiting-logo.svg", alt="alt")
 
 
@@ -72,7 +72,7 @@ block footer
 			ul.footer-menu
 				- var fmenu = ['home', 'about', 'portfolio', 'contact us'];
 				each item, ind in fmenu
-					if ind == 1
+					if ind == 2
 						li.active
 							a(href="#")= item
 					else
