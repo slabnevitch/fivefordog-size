@@ -30,17 +30,23 @@ block content
 								input(type="text", name="" placeholder="IAMHAROLD@MAIL.COM")
 
 						.ffd-form__row.ffd-form__row--selects
-							.ffd-form__select PROJECT TYPE
-								.ffd-form__select-label
+							
+							label.ffd-form__label
+								span.ffd-form__label-mame project type
 								select#(name="")
-									- for (var i=0; i < 5; i++)
-											option(value="") SELECT THAT APPLY
+									- var types = ['branding', 'web design', 'illustration', 'something else'];
+										
+									option(value="") SELECT THAT APPLY
+									each type in types
+										option(value="")= type
 
-							.ffd-form__select
-								.ffd-form__select-label BUDGET
+							label.ffd-form__label
+								span.ffd-form__label-mame BUDGET
 								select#(name="")
-									- for (var i=0; i < 5; i++)
-											option(value="") INVEST IN PROJECT
+									option(value="") BUDGET
+									- var budget = ['less than $1000', '$1000 - $5000', '$5000 - $10000', 'more than $10000']; 
+									each item in budget
+										option(value="")= item
 						
 						label.ffd-form__label.ffd-form__label--textarea
 							span.ffd-form__label-mame QUICK MESSAGE

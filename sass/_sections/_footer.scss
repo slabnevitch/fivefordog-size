@@ -134,6 +134,7 @@
 			&:before {
 				content: "";
 				background: #000;
+				opacity: .7;
 				position: absolute;
 				width: 5px;
 				height: 100%;
@@ -152,10 +153,8 @@
 
 			&:hover:before,
 			&:focus:before {
-				animation: .5s forwards hover-v linear;
-				-webkit-animation: .5s forwards hover-v linear;
-				animation-fill-mode: forwards;
-				-webkit-animation-fill-mode: forwards;
+				animation: .2s forwards hover-v linear;
+
 			}
 		}
 		&.footer-menu__index-page{
@@ -174,7 +173,7 @@
 			&.active{
 				a{
 					// background-color: $text;
-					color: #fff;
+					color: $text;
 				}
 			}
 		}
@@ -185,7 +184,7 @@
 				&:before{
 					transform: scaleX(1);
 					width: 100%;
-					opacity: .7;
+					opacity: 1;
 				}
 				&:hover:before,
 				&:focus:before{

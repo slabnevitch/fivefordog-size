@@ -173,13 +173,15 @@
 	.contacts-left{
 		padding-top: 50px;
 	}
-	.ffd-form__label input[type="text"], .ffd-form__label textarea{
+	.ffd-form__label input[type="text"], .ffd-form__label textarea,
+	.ui-selectmenu-button.ui-button{
 		padding: 7px;
 		padding-top: 10px;
+		padding-right: 0;
 		font-size: 16px;
 	}
 	.ui-selectmenu-button.ui-button{
-		font-size: 18px;
+		font-size: 16px;
 	}
 	.ffd-form__buttons button{
 		font-size: 16px;
@@ -187,6 +189,7 @@
 	.ffd-form__label-mame{
 		font-size: 11px;
 		top: -12px;
+		left: 5px;	
 	}
 	.ffd-form__label textarea{
 		height: 90px;
@@ -273,6 +276,12 @@
 		max-height: 180px;
 		overflow: auto;
 
+	}
+	.footer--index .footer-menu li a:before{
+		background-color: #fff;
+	}
+	.footer--index .footer-menu li a:hover{
+		color: $text;
 	}
 	
 }
@@ -645,6 +654,10 @@
 				color: #fff;
 			}
 		}
+ }
+
+ .ffd-form__row--selects .ffd-form__label:first-child{
+ 	margin-right: 0;	
  }
 
 	/*Disable Animation on Mobile Devices*/
